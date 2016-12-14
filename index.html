@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Metaphorista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="Serving you the best in steaming hot metaphors">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Metaphorista">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Metaphorista">
+<meta property="og:description" content="Serving you the best in steaming hot metaphors">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Metaphorista">
+<meta name="twitter:description" content="Serving you the best in steaming hot metaphors">
+  
+    <link rel="alternate" href="/atom.xml" title="Metaphorista" type="application/atom+xml">
+  
+  <link rel="icon" href="/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/home.css" >
+  
+
+  
+
+  
+
+</head>
+
+<body>
+  
+    <header id="header">
+  <!-- 
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+      <div id="header-title" class="inner">
+        <h1 id="logo-wrap">
+          <a href="/" id="logo">Metaphorista</a>
+        </h1>
+        
+      </div>
+      <div id="header-inner" class="inner">
+        <nav id="main-nav">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          
+            <a class="main-nav-link" href="/">Home</a>
+          
+            <a class="main-nav-link" href="/archives">Archives</a>
+          
+            <a class="main-nav-link" href="/categories">Categories</a>
+          
+            <a class="main-nav-link" href="/tags">Tags</a>
+          
+            <a class="main-nav-link" href="/about">About</a>
+          
+        </nav>
+        <nav id="sub-nav">
+          
+            <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          
+          <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        </div>
+      </div>
+    </div>
+  -->
+
+
+  
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(/css/images/moonlamp.jpg); background-size: auto 100%;">
+  
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">Metaphorista</a></h1>
+            <h3>Serving you the best in steaming hot metaphors</h3>
+            <h5>Neville Attkins</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+    <script>
+        var img = new Image();
+        var intrologodiv = document.getElementById("intrologo");
+        img.src = intrologodiv.style.backgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+        img.onload=function(){
+          if (img.width / img.height <= document.body.clientWidth / document.body.clientHeight) {
+            intrologodiv.style.backgroundSize = "100% auto";
+          } else {
+            intrologodiv.style.backgroundSize = "auto 100%";
+          }
+        };
+    </script>
+ 
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Home</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/about">About</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-The-making-of-this-blog-2"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/The-making-of-this-blog-2/">The making of this blog 2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/The-making-of-this-blog-2/" class="article-date">
+	  <time datetime="2016-12-12T23:48:17.000Z" itemprop="datePublished">12-12-16</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>So the things that make this blogging experience a pleasure and lets be honest if it isn’t then you’ll not want to keep doing it, are the following:</p>
+<ul>
+<li><p><strong>Markdown</strong> allows you to focus on what you’re writing. Here are some useful links to<br><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="external">Markdown Cheatsheet</a><br><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables" target="_blank" rel="external">Markdown tables -who knew they could be fun </a></p>
+</li>
+<li><p><strong>Hexo tags</strong> Allow you to add images, youtube, blockquotes and all the rest of it really easily     <a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="external">Hexo Tags</a> - my only wishes is that this page were a little easier to use - I still haven’t quite fathomed how to add images the hexo tag way.</p>
+</li>
+<li><p><strong>Hexo Admin</strong> it allows me to write posts and pages up on the site keep them in draft till I’m ready to share them, also you get a handy preview <a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="external">Hexo Admin</a></p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-create-a-new-post"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/create-a-new-post/">Games metaphors play</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/create-a-new-post/" class="article-date">
+	  <time datetime="2016-12-07T18:08:00.000Z" itemprop="datePublished">07-12-16</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Let’s start by banging some quotes together:</p>
+<blockquote><p>I can think of no better expression to characterize these similarities than “family resemblances”; for the various resemblances between members of a family: build, features, colour of eyes, gait, temperament, etc. etc. overlap and criss-cross in the same way. – And I shall say: “games” form a family.</p>
+<footer><strong>Ludwig Wittgenstein</strong><cite><a href="https://en.wikipedia.org/wiki/Family_resemblance" target="_blank" rel="external">Family Resemblances WikiPedia</a></cite></footer></blockquote>
+<blockquote><p>Writing free verse is like playing tennis with the net down.</p>
+<footer><strong>Robert Frost</strong><cite><a href="https://en.wikipedia.org/wiki/Robert_Frost" target="_blank" rel="external">Robert Frost Wikipedia</a></cite></footer></blockquote>
+<p>I’ve a hunch that what makes games and metaphors ‘work’ is related. In the first quote Wittgenstein is trying to solve the ‘problem’ of defining what it is we’re talking abbout when we talk about games. We have this experience of feeling that although almost anything might be a game there are definitely things that just aren’t games: rain, global warming, gardening and cosmetics picking things at random that just aren’t games. By contrast Cricket, Mornington Crescent, Quidditch and what a cat does with a mouse rather than eat it are games. I see that what holds these togther as games is as Wittgenstein says that they “…overlap and criss-cross”. </p>
+<p>Now that other quote - the tennis match with the net down. I take from this that Robert Frost did not entirely approve of free verse, but what interests me is the picture of a game with something missing, and metaphors like games have a family resemblance one to others but also there is a family resemblance to other metaphors that work for me. Its why I think that metaphors that are doing their job properly feel complete and also like games that they mean something in the same way as games mean something. </p>
+<blockquote><p>Some people think football is a matter of life and death. I assure you, it’s much more serious than that.</p>
+<footer><strong>Bill Shankly</strong><cite><a href="https://en.wikipedia.org/wiki/Bill_Shankly" target="_blank" rel="external">Bill Shankly WikiPedia</a></cite></footer></blockquote>
+<p>For those for whom football means something, it is both a whole course of study near endless topic of conversation and source of meaning. So it is with the metaphors in any life. To an outsider they are like football to the non-fan - just so many grown men hoofing a bladder around a park for 90 minutes in the rain. Or if you prefer as Mitchell and Web have it:</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/MusyO7J2inM" frameborder="0" allowfullscreen></iframe></div> 
+<p>Curiously now I find myself thinking that I’ve kept my own metaphorical cards close to my chest - the family of metaphors that give me mean are. That’s a post for another time.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Games/">Games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Metaphor/">Metaphor</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-new-post"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/new-post/">Persons into metaphors - don&#39;t go</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/new-post/" class="article-date">
+	  <time datetime="2016-12-07T11:23:00.000Z" itemprop="datePublished">07-12-16</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Looking no further than recent history there are many examples of where metaphoring people leads to inhumanity. Referring to particular ethnic groups as rats or cochroaches or immigrants as foul liquids these formulations are the sign that ill treatment of any group so labelled is forseeable if not imminent.<br>The reasons are obvious - people find hurting other people prohibited - morally / religiously and physically difficult for all but the pathological and taking away the humanity of a group is therefore the mechanism to enable the eroding of that prohibition. Its why for example staying on your feet is essential in any kind of brawl, once your down, you’ll find your humanity overlooked.<br>If we extend ourselves from metaphor to other kinds of figuration for example synecdoche (the replacement of the part for the whole) referring to workers as ‘hands’- still used in the fashion industry or ‘boots on the ground’ for soliders it seems that a similar but not the same logic is at work, but these forms aren’t derogatory. They may be unwelcome but they are meant to express a range of feelings. Politicians and sportsmen in leadership roles are often described as “a safe pair of hands”. We talkabout a person being the “main man” or “right hand man”  What about the singer described as “the voice” or the ‘super model’ who was called “the body” clearly these are not meant perjoratively. </p>
+<p>In all of these cases - even in objectional and sexist examples - you can provide your own examples - where the parts are still identifiably human or even a thing that retains the imprint of a human is worthy of a human response - Van Gogh’s painting of shoes or the famous empty Dicken’s chair etching:</p>
+<p><img src="https://pbs.twimg.com/media/BUD8jLACQAASzjm.jpg" alt="His Empty Chair"></p>
+<p>Humans can see humanness in almost anything - but when we’re able to label something as <em>not</em> human this seems to license us to access our inhumanity.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-Lets-have-a-new-page"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/Lets-have-a-new-page/">The making of this blog 1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/Lets-have-a-new-page/" class="article-date">
+	  <time datetime="2016-12-07T11:19:20.000Z" itemprop="datePublished">07-12-16</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>If you’re liking the blog and why shouldn’t you, you may be wondering how it’s done. Well the decisions that went into building this were:</p>
+<h3 id="First-the-decision-of-a-static-site-generator"><a href="#First-the-decision-of-a-static-site-generator" class="headerlink" title="First the decision of a static site generator"></a>First the decision of a static site generator</h3><p>The decisions that I had to make was:</p>
+<ol>
+<li>To chose a static site generator rather than a wordpress or squarespace or a whatever. I chose a static site because its a<br>technology that I didn’t know and thought I should,and its sort of embarrassing not to do this stuff myself.</li>
+<li>I chose a static site generator called Hexo, from this site<a href="https://www.staticgen.com/" target="_blank" rel="external">List of static site generators</a> How did I do this? I chose the most popular that used just javascript, I didn’t think I wanted to learn Go or Ruby and Hexo had lots of themes to choose from. I nearly chose Roots but its been deprecated and its replacement is very new. Also Gatsby looked neat (and would have given me a chance to learn some react - but then it doesn’t have so many themes that I wanted to use)</li>
+<li>Also my decision as to Hexo isn’t life defining - it costs nothing and my posts are all stored on my machine and are in markdown (more about this later) as are pretty much all the static sites you’ll come across. So if on a whim I change my mind this content, for what its worth can appear in other forms with pretty much no harm done.</li>
+<li>Next I chose the Hiker theme from this <a href="https://hexo.io/themes/" target="_blank" rel="external">List of Hexo Themes</a> That decision was quite easy - it had to be nice and clean with just enough bells and whistles to make it all worth while. </li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      <div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2016 - 2016 Metaphorista All Rights Reserved.</p>
+	      <p id="copyRightCn">Neville Attkins hold copyright</p>
+	</div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+
+  <script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Metaphorista
+          </div>
+          <div class="panel-body">
+            Copyright © 2016 Neville Attkins All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+</body>
+</html>
